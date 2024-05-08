@@ -1,4 +1,5 @@
-const rect = require('./rectangle')
+// const rect = require('./rectangle')
+const calculateBonus = require('./employeeBonus');
 
 // console.log('Area Of Rectangle', '=>', rect.areaOfRectangle(10, 30))
 // console.log('Parameter of Rectangle' , '=>', rect.perimeterOfRectangle(10, 20))
@@ -14,11 +15,23 @@ const rect = require('./rectangle')
 
 // solveAllProbs(10, 20)
 
-rect(20, 40, (err, area, perimeter) => {
+// rect(20, 40, (err, area, perimeter) => {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log('Area Of Rectangle', '=>', area);
+//         console.log('Parameter of Rectangle' , '=>', perimeter);
+//     }
+// })
+
+
+calculateBonus(30000, (err, result) => {
     if (err) {
         console.log(err);
     } else {
-        console.log('Area Of Rectangle', '=>', area);
-        console.log('Parameter of Rectangle' , '=>', perimeter);
+        console.log('Salary with bonus:', result);
     }
-})
+});
+
+
+
