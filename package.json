@@ -1,0 +1,15 @@
+{
+  "name": "learnnode",
+  "version": "1.0.0",
+  "description": "learning node in class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "prem kaneriya",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
