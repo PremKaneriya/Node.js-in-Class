@@ -1,17 +1,12 @@
-const handleEmployeeBonus = (bonus) => {
-    if (bonus <= 10000) {
-        return bonus * 0.10;
-    } else if (bonus <= 20000) {
-        return 10000 * 0.10 + (bonus - 10000) * 0.15;
-    } else {
-        return 10000 * 0.10 + 10000 * 0.15 + (bonus - 20000) * 0.20;
-    }
-};
 
-module.exports = (bonus, callback) => {
-    if (bonus < 0) {
-        callback(new Error('Bonus cannot be negative'));
+module.exports = (sal, bonus) => {
+    if (sal <= 0) {
+        bonus(new Error('Salary is below or equal to 0'));
+    } else if (sal <= 10000) {
+        bonus(null, sal * 0.10);
+    } else if (sal <= 20000) {
+        bonus(null, sal * 0.15);
     } else {
-        callback(null, handleEmployeeBonus(bonus));
+        bonus(null, sal * 0.20);
     }
-};
+}
