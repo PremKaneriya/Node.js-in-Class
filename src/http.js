@@ -1,24 +1,15 @@
 const http = require('http')
-const url = require('url')
 
 const server = http.createServer((req, res) => {
-    // console.log(req.url)
-    // console.log(req.method);
-    // console.log(url.parse(req.url, true).query);
+    console.log(req.headers);
+    console.log(req.method);   
+    console.log(req.url); 
 
-    res.writeHead(200, { 'Content-Type': 'text.html' })
-    res.write('hello world')
-    res.end('end of the World')
+    res.writeHead(200, {'Content-Type': 'application/json'})
+    res.write('done')
+    res.end()
 })
 
-fs.readFile('file.txt', "utf-8", function (err, data) {
-    res.write(data);
-    console.log(data);
-    res.end()
-
-});
-
-
 server.listen(3000, () => {
-    // console.log('server is running on port 3000')
+    console.log('Listening on port 3000...')
 })

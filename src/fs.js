@@ -15,13 +15,13 @@ const fs = require('fs');
 // });
 
 // // writing file
-fs.writeFile('file.txt', 'Hello, im node!', (err) => {
-    if (err) {
-        console.error(err);
-        return;
-    }
-    console.log('File has been written.');
-});
+// fs.writeFile('file.txt', 'Hello, im node!', (err) => {
+//     if (err) {
+//         console.error(err);
+//         return;
+//     }
+//     console.log('File has been written.');
+// });
 
 // // checking file existence
 // if (fs.existsSync('file.txt')) {
