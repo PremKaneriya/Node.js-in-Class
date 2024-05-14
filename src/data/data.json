@@ -1,14 +1,1 @@
-[
-  {
-    "id": 1,
-    "name": "ABC institute"
-  },
-  {
-    "id": 2,
-    "name": "XYZ institute"
-  },
-  {
-    "id": 3,
-    "name": "PQR institute"
-  }
-]
+[{"id":2,"name":"XYZ institute"},{"id":3,"name":"PQR institute"},{"id":4,"name":"Loda institute"},{"id":5,"name":"BHO institute"},{"id":5,"name":"Prem institute"}]
